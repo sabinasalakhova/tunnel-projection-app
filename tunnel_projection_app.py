@@ -60,8 +60,8 @@ if tunnel_file and drill_file:
 
         for i in range(len(projection_df)):
             ax.plot(
-                [projection_df.loc[i, 'easting'], projection_df.loc[i, 'projected_easting']],
-                [projection_df.loc[i, 'northing'], projection_df.loc[i, 'projected_northing']],
+                [projection_df.loc[i, 'original_easting'], projection_df.loc[i, 'projected_easting']],
+                [projection_df.loc[i, 'original_northing'], projection_df.loc[i, 'projected_northing']],
                 color='gray', linestyle='--', linewidth=0.8
             )
 
