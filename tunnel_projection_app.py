@@ -32,7 +32,7 @@ if tunnel_file and drill_file:
             chainage = tunnel_line.project(drill_pt) 
             
             results.append({
-                'drillhole_id': row.id,
+                'borehole_id': row.id,
                 'easting': row.Easting,
                 'northing': row.Northing,
                 'projected_easting': projected_pt.x,
