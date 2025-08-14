@@ -33,8 +33,8 @@ if tunnel_file and drill_file:
             
             results.append({
                 'borehole_id': row.id,
-                'easting': row.Easting,
-                'northing': row.Northing,
+                'original_easting': row.Easting,
+                'original_northing': row.Northing,
                 'projected_easting': projected_pt.x,
                 'projected_northing': projected_pt.y,
                 'chainage': chainage,
