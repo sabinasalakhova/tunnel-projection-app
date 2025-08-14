@@ -11,7 +11,7 @@ st.markdown("Project borehole locations onto a tunnel alignment by uploading you
 
 # File upload
 tunnel_file = st.file_uploader("**Tunnel Alignment CSV**: Ensure column headers are exactly **Easting (m)** and **Northing (m)**." , type=["csv"])
-drill_file = st.file_uploader("**Borehole Locations CSV**: Column headers must be **id**, **Easting**, and **Northing, type=["csv"])
+drill_file = st.file_uploader("**Borehole Locations CSV**: Column headers must be **id**, **Easting**, and **Northing**.", type=["csv"])
 
 if tunnel_file and drill_file:
     try:
