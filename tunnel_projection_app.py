@@ -11,7 +11,7 @@ st.markdown("Upload your tunnel alignment and drillhole CSV files to project dri
 
 # File upload
 tunnel_file = st.file_uploader("Upload Tunnel Alignment CSV data, make sure to rename the columns to exactly this format Easting (m) and Northing (m) ", type=["csv"])
-drill_file = st.file_uploader("Upload Drillhole CSV data, make sure the column names are id , Easting , Northing ", type=["csv"])
+drill_file = st.file_uploader("Upload Borehole Locations CSV data, make sure the column names are id , Easting , Northing ", type=["csv"])
 
 if tunnel_file and drill_file:
     try:
